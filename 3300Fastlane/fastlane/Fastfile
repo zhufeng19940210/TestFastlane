@@ -1,0 +1,41 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+
+lane :add_devices_only do
+  register_devices(devices_file: "./devices.txt", team_id: "3R48RV923F",username: "shenzhenbailingjia@163.com")
+end
+
+lane :add_devices_update_pp do
+  register_devices(devices_file: "./devices.txt", team_id: "3R48RV923F",username: "shenzhenbailingjia@163.com")
+
+ match(git_url:"http://github.miguatech1.com/huijianrong/aomiCertificates.git",
+      type:"development",
+      app_identifier:["id1","id12","id13","id14"],
+      username:"shenzhenbailingjia@163.com",
+      readonly: false,
+      force_for_new_devices: true,
+      git_branch:"macauLife")
+
+  match(git_url:"http://github.miguatech1.com/huijianrong/aomiCertificates.git",
+      type:"adhoc",
+      app_identifier:["id1","id12","id13","id14"],
+      username:"shenzhenbailingjia@163.com",
+      readonly: false,
+      force_for_new_devices: true,
+      git_branch:"macauLife")
+end
+
+
+end

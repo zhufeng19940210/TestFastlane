@@ -22,7 +22,7 @@ lane :add_devices_update_pp do
 
  match(git_url:"https://github.com/zhufeng19940210/TestFastlane.git",
       type:"development",
-      app_identifier:["id1","id12","id13","id14"],
+      app_identifier:["com.bailing.uuuu"],
       username:"shenzhenbailingjia@163.com",
       readonly: false,
       force_for_new_devices: true,
@@ -30,7 +30,7 @@ lane :add_devices_update_pp do
 
   match(git_url:"https://github.com/zhufeng19940210/TestFastlane.git",
       type:"adhoc",
-      app_identifier:["id1","id12","id13","id14"],
+      app_identifier:["com.bailing.uuuu"],
       username:"shenzhenbailingjia@163.com",
       readonly: false,
       force_for_new_devices: true,

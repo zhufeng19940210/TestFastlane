@@ -1,8 +1,8 @@
-git_url("http://github.miguatech1.com/huijianrong/aomiCertificates.git")
+git_url("https://github.com/zhufeng19940210/TestFastlane.git")
 
 type("development") # The default type, can be: appstore, adhoc, enterprise or development
 
-app_identifier(["id1"])
+app_identifier(["com.bailing.uuuu"])
 username("shenzhenbailingjia@163.com") # Your Apple Developer Portal username
 git_branch("macauLife")
 skip_docs(true)

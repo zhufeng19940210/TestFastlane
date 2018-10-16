@@ -20,7 +20,7 @@ end
 lane :add_devices_update_pp do
   register_devices(devices_file: "./devices.txt", team_id: "3R48RV923F",username: "shenzhenbailingjia@163.com")
 
- match(git_url:"http://github.miguatech1.com/huijianrong/aomiCertificates.git",
+ match(git_url:"https://github.com/zhufeng19940210/TestFastlane.git",
       type:"development",
       app_identifier:["id1","id12","id13","id14"],
       username:"shenzhenbailingjia@163.com",
@@ -28,7 +28,7 @@ lane :add_devices_update_pp do
       force_for_new_devices: true,
       git_branch:"macauLife")
 
-  match(git_url:"http://github.miguatech1.com/huijianrong/aomiCertificates.git",
+  match(git_url:"https://github.com/zhufeng19940210/TestFastlane.git",
       type:"adhoc",
       app_identifier:["id1","id12","id13","id14"],
       username:"shenzhenbailingjia@163.com",
